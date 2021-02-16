@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>House Analysis</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>391</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>House Count</string>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>271</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="inputValue"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Output:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Quantity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="Find_btn">
+        <property name="text">
+         <string>Find</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="answer">
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0.000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="show_graph_btn">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>110</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show Overall Graph</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title_lbl">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>561</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>House - Bedrooms</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>657</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPrice">
+    <property name="title">
+     <string>House</string>
+    </property>
+    <addaction name="actionBedrooms"/>
+    <addaction name="actionFloors"/>
+   </widget>
+   <widget class="QMenu" name="menuGeography">
+    <property name="title">
+     <string>Geography</string>
+    </property>
+    <addaction name="actionShow_Graph"/>
+   </widget>
+   <widget class="QMenu" name="menuPrice_2">
+    <property name="title">
+     <string>Price</string>
+    </property>
+    <addaction name="actionPer_Square_Feet"/>
+    <addaction name="actionLocation"/>
+    <addaction name="actionLatitude"/>
+    <addaction name="actionBeedrooms"/>
+    <addaction name="actionWaterFront"/>
+    <addaction name="actionFloors_2"/>
+    <addaction name="actionZipcode"/>
+   </widget>
+   <addaction name="menuPrice"/>
+   <addaction name="menuGeography"/>
+   <addaction name="menuPrice_2"/>
+  </widget>
+  <action name="actionPrice">
+   <property name="text">
+    <string>Price</string>
+   </property>
+  </action>
+  <action name="actionBedrooms">
+   <property name="text">
+    <string>Bedrooms</string>
+   </property>
+  </action>
+  <action name="actionFloors">
+   <property name="text">
+    <string>Floors</string>
+   </property>
+  </action>
+  <action name="actionPer_Square_Feet">
+   <property name="text">
+    <string>Per Square Feet</string>
+   </property>
+  </action>
+  <action name="actionLocation">
+   <property name="text">
+    <string>Location</string>
+   </property>
+  </action>
+  <action name="actionLatitude">
+   <property name="text">
+    <string>Latitude</string>
+   </property>
+  </action>
+  <action name="actionBeedrooms">
+   <property name="text">
+    <string>Bedrooms</string>
+   </property>
+  </action>
+  <action name="actionWaterFront">
+   <property name="text">
+    <string>WaterFront</string>
+   </property>
+  </action>
+  <action name="actionFloors_2">
+   <property name="text">
+    <string>Floors</string>
+   </property>
+  </action>
+  <action name="actionZipcode">
+   <property name="text">
+    <string>Zipcode</string>
+   </property>
+  </action>
+  <action name="actionShow_Graph">
+   <property name="text">
+    <string>Show Graph</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
